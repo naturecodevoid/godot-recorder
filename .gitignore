@@ -13,3 +13,11 @@ f2mp4/images/*
 *.o
 *.so
 *.so.*
+.DS_Store
+._*
+recorder.zip
+*.os
+recorder/*
+!recorder/bin
+recorder/bin/*.dylib
+.sconsign.dblite

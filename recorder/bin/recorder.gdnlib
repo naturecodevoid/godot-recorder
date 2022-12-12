@@ -7,12 +7,12 @@ reloadable=false
 
 [entry]
 
-X11.64="res://recorder/bin/librecorder.so"
+X11.64="res://recorder/bin/librecorder.1"
 Windows.64="res://recorder/bin/librecorder.dll"
 OSX.64="res://recorder/bin/librecorder.dylib"
 
 [dependencies]
 
-X11.64=["res://recorder/bin/libx264.so.160", "res://recorder/bin/libavutil.so.56", "res://recorder/bin/libopenh264.so", "res://recorder/bin/libopenh264.so.6", "res://recorder/bin/libopenh264.so.2.1.1", "res://recorder/bin/libavcodec.so.58", "res://recorder/bin/libavformat.so.58", "res://recorder/bin/libswresample.so.3", "res://recorder/bin/libswscale.so.5"]
+X11.64=["res://recorder/bin/libavutil.so.56", "res://recorder/bin/libopenh264.so", "res://recorder/bin/libopenh264.so.6", "res://recorder/bin/libopenh264.so.2.1.1", "res://recorder/bin/libavcodec.so.58", "res://recorder/bin/libavformat.so.58", "res://recorder/bin/libswresample.so.3", "res://recorder/bin/libswscale.so.5"]
 Windows.64=[]
-OSX.64=[]
+OSX.64=["res://recorder/bin/libopenh264.dylib", "res://recorder/bin/libavcodec.dylib", "res://recorder/bin/libavformat.dylib", "res://recorder/bin/libavutil.dylib", "res://recorder/bin/libswresample.dylib", "res://recorder/bin/libswscale.dylib"]

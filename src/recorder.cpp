@@ -21,7 +21,7 @@
 #include <Directory.hpp>
 #include <Timer.hpp>
 #include <PoolArrays.hpp>
-#include <bits/stdint-uintn.h>
+#include <stdint.h>
 #include "mpeg_writer.h"
 
 namespace godot
