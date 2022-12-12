@@ -68,7 +68,7 @@ env.Append(
 libDir = "recorder/bin"
 
 def get_libs():
-    libs = [env.File(os.path.join("godot-cpp/bin", "libgodot-cpp.%s.release.64%s" % (platform, env["LIBSUFFIX"])))]
+    libs = [env.File("godot-cpp/bin/libgodot-cpp.%s.release.64%s" % (platform, env["LIBSUFFIX"]))]
     for f in os.listdir(libDir):
         if f.endswith(env["SHLIBSUFFIX"]):
             libs.append(env.File(libDir + "/" + f))
