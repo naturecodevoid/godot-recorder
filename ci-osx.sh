@@ -10,16 +10,27 @@ brew list scons || brew install scons
 wget http://ciscobinary.openh264.org/libopenh264-2.3.1-mac-x64.dylib.bz2
 bzip2 -dv libopenh264-2.3.1-mac-x64.dylib.bz2
 rm -v libopenh264-2.3.1-mac-x64.dylib.bz2 || true
-mv -v libopenh264-*-mac-x64.dylib libopenh264.dylib
+mv -v libopenh264-*.dylib libopenh264.dylib
+install_name_tool -id recorder/bin/libopenh264.dylib libopenh264.dylib
 
 # ffmpeg stuff
 brew list ffmpeg || brew install ffmpeg
 FFMPEG_LIB_PATH=$(brew --prefix ffmpeg)/lib
+
 cp -v $FFMPEG_LIB_PATH/libavcodec.dylib .
+install_name_tool -id recorder/bin/libavcodec.dylib libavcodec.dylib
+
 cp -v $FFMPEG_LIB_PATH/libavformat.dylib .
+install_name_tool -id recorder/bin/libavformat.dylib libavformat.dylib
+
 cp -v $FFMPEG_LIB_PATH/libavutil.dylib .
+install_name_tool -id recorder/bin/libavutil.dylib libavutil.dylib
+
 cp -v $FFMPEG_LIB_PATH/libswresample.dylib .
+install_name_tool -id recorder/bin/libswresample.dylib libswresample.dylib
+
 cp -v $FFMPEG_LIB_PATH/libswscale.dylib .
+install_name_tool -id recorder/bin/libswscale.dylib libswscale.dylib
 
 ## Build
 

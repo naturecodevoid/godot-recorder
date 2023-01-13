@@ -15,7 +15,7 @@ _global_script_classes=[ {
 "path": "res://recorder/bin/recorder.gdns"
 } ]
 _global_script_class_icons={
-"Recorder": "res://icon.png"
+"Recorder": ""
 }
 
 [application]
@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="Recorder-demo"
 run/main_scene="res://recorder-demo.tscn"
 config/icon="res://icon.png"
+
+[global]
+
+fps=false
 
 [input]
 

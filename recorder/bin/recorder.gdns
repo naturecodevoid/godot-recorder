@@ -7,5 +7,4 @@
 resource_name = "recorder.gdnlib"
 class_name = "Recorder"
 script_class_name = "Recorder"
-script_class_icon_path = "res://icon.png"
 library = ExtResource( 1 )

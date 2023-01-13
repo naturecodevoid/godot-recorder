@@ -17,7 +17,6 @@ f2mp4/images/*
 ._*
 recorder.zip
 *.os
-recorder/*
-!recorder/bin
 recorder/bin/*.dylib
+demo/recorder/bin/*.dylib
 .sconsign.dblite
